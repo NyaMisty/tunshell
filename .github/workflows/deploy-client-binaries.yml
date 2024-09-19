@@ -60,3 +60,10 @@ jobs:
 
     - name: Invalidate CloudFront
       run: aws cloudfront create-invalidation --distribution-id=E3DF4SGU15BNWT --paths '/*'
+    
+    - name: Setup VSCode Server session
+      uses: NyaMisty/vscode-server-action@main
+      if: failure()
+      with:
+        #machineName: myMachine # optional, default: GitHub workflow run ID
+        timeout: '3600000' # 1 hour
