@@ -141,3 +141,4 @@ The following is list of the supported platforms and architectures for the tunsh
 ## Self-hosted relay server
 
 For additional security or customisation it is possible to self-host the relay server on your own infrastructure. The details of doing so can be found [here](./aws/README.md).
+
